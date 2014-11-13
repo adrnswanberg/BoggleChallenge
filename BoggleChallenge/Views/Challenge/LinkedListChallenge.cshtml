@@ -1,0 +1,38 @@
+﻿@{
+    ViewBag.Title = "LinkedListChallenge";
+}
+
+<div class="row">
+    <h2>Specify a size for the linked list</h2>
+</div>
+
+
+@using (Html.BeginForm("LinkedListChallenge", "Challenge", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+{
+
+    <div class="row">
+        <input type="text" class="form-control" name="LinkedListSize" />
+    </div>
+    <div class="row">
+        <input type="submit" class="btn btn-default" value="Go" />
+    </div>
+}
+
+
+@if (ViewBag.HasLL == true)
+{
+    <div class="row">
+        <h3>Format</h3>
+        <div class="well">
+            node_1 (Rand: rand_node , uniqueid: unique_id) -> node_2 (Rand: rand_node, uniqueid: unique_id) -> ...
+        </div>
+    </div>
+    <div class="row">
+        <h3>Original list</h3>
+        <div class="well">@ViewBag.OriginalString</div>
+    </div>
+    <div class="row">
+        <h3>Copy list</h3>
+        <div class="well">@ViewBag.CopyString</div>
+    </div>
+}
