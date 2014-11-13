@@ -129,7 +129,7 @@ namespace BoggleChallenge.Models
         protected List<String> Solve()
         {
             wordsInBoard = new HashSet<string>();
-            boardState = new BoardState[numRows, numRows];
+            boardState = new BoardState[numRows, numCols];
             for (int i = 0; i < numRows; i++)
             {
                 for (int j = 0; j < numCols; j++)
@@ -140,7 +140,7 @@ namespace BoggleChallenge.Models
 
             for (int i = 0; i < numRows; i++)
             {
-                for (int j = 0; j < numRows; j++)
+                for (int j = 0; j < numCols; j++)
                 {
                     char firstChar = board[i, j];
                     if (trie.children.ContainsKey(firstChar))
