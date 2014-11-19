@@ -7,4 +7,8 @@ As a bonus, also includes an algorithm for copying a linked list with random poi
 
 Algorithms located in the models folder.
 
-Must have Visual Studio to build and run.
+How to Run
+---------------
+Open BoggleChallenge.sln in Visual Studio 2013 (available free at http://www.visualstudio.com/en-us/visual-studio-community-vs.aspx)
+
+Hit the play button
